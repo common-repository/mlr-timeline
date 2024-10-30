@@ -1,0 +1,101 @@
+/*
+ * @package   MLRTimeline
+ * @version   1.4
+ * @since     1.4
+ * @author    Matthew Lillistone <matthewlillistone.co.uk>
+ * 
+ */
+
+.timeline-container {max-width:900px; height:auto; margin:0 auto; overflow:hidden;}
+
+.timelinediv {display:block; float:none; margin:0 auto; overflow:hidden;}
+.times {padding-left: 0;}
+
+ul.times {padding:0 !important; margin:0 0 1.5em !important; max-height:400px !important;}
+/* ul.times li {opacity:0; margin:0 !important; width:auto; height:100%; list-style:none;} */
+
+li p.li_body {height:auto; display:block; max-width:150px; font-size: 0.8em; line-height: 1.2em;}
+.wrap_h h2.timeline-caption {display:block; margin:4px !important; padding:0 !important; font-size:15px !important; width:142px; border-top-left-radius: 3px; border-top-right-radius: 3px;}
+margin:0; padding:5px; margin-bottom: 15px;}
+#timeline-title {font-size:1.2em; padding-left:15px; padding-top: 15px;}
+#times {padding: 0px !important;}
+
+.wrap_h {
+position: absolute;
+background: rgba(255, 255, 255, 0.7);
+padding:0;
+top: 0;
+left: 0;
+width: 150px;
+border-top-left-radius:3px; 
+border-top-right-radius:3px;
+}
+
+.timesexp {
+position: relative;
+float: none;
+height: 100%;
+}
+.timesexp .active {z-index:20;}
+.timesexp .active img {float:left;}
+.date-node {display:block;margin:0 !important; background:transparent;}
+
+@media screen and (min-width:560px) and (max-width:9999px) {
+.date-node img {min-width:150px; max-width:150px !important; float:left; padding:0 !important; margin:0; border:0 !important; margin-bottom: 10px; border-radius:3px;}
+}
+@media screen and (min-width:0px) and (max-width:560px) {	
+.date-node img {min-width:150px; max-width: 150px !important; float:left; width:auto; margin-bottom:10px; border-radius:3px; clear: none !important; margin-right:0 !important;}
+}
+div#timeline {height: auto; margin: 10px 0 8px; padding: 10px 10px 15px; white-space: nowrap; overflow:hidden;}
+
+li.post-marker {background:transparent !important;}
+li.post-marker p {cursor: default; background: rgba(0, 0, 0, 0) !important; padding:0; padding-left:2px !important;}
+.marker {cursor: pointer;}
+#time-years {float: left;}
+
+.month-time-increment {padding-left: 0; float:none;}
+#timeline ul.time-increment p {display: inline-block; margin-right: 10px; float:none;}
+/* #timeline ul.time-increment ul.month-time-increment > p {margin-left: 2px; display: inline-block; padding: 0 10px; float:none;}
+*/
+div#but-container {margin-bottom:30px; position:relative; clear:both;}
+div#but-container:after, #dates_left:after, div#bright:after, div#bleft:after {
+	content: ".";
+	display:block;
+	clear:both;
+	visibility:hidden;
+	line-height:0;
+	height:0;
+	}
+div#bleft {font-size: 1em; left:15px; position:absolute; z-index:15;}
+div#bright {font-size: 1em; right:15px; position:absolute; z-index:15;}
+#button-left, #button-right {font-size: 1.5em; opacity:0.7;}
+#button-right-end {font-size: 1.5em; margin-left: 10px; opacity:0.7;}
+#button-left-end {font-size: 1.5em; margin-right: 10px; opacity:0.7;}
+#button-left:hover, #button-right:hover, #button-left-end:hover, #button-right-end:hover {opacity:0.95;}
+#button-left {}
+
+.year-increment {float: left;}
+p.pyear {font-size: 3em; padding: 0 30px 0 0; border-radius:3px; line-height:1.6em; margin:0 !important;}
+.month-increment {float: left;}
+p.pmonth {font-size: 2em; padding:0; line-height: 2.5em; border-radius:3px; margin:0 !important; margin-left: 10px !important;}
+p.pday {font-size:2em; float:left; margin:0; margin-right:10px; line-height: 1.5em;}
+p.phour {margin: 0 !important; line-height: 3em;}
+
+ul#day_list {padding-left:0; margin:0 !important; border-bottom:1px dashed #ddd; line-height:1em;}
+ul#day_list .post-marker {display:inline-block; border-left:1px dashed #ddd; margin:0rem !important; margin:0 !important; padding:0 !important;}
+
+#dates_left {position: relative; z-index: 10;}
+
+.li_meta {display: block; font-size:0.8em; padding:0 !important; position: relative; width: 150px;}
+.li_meta .fa-user{padding-left: 10px; }
+.li_meta .fa-folder-open{padding-left:10px;}
+
+.time-increments {
+	width: auto;
+	height: 100%;
+	float:left;
+	position:relative;
+	margin-bottom: 20px;
+}
+
+#active_details {position:absolute; width:auto; background:transparent; z-index: 10;}

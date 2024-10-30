@@ -1,0 +1,75 @@
+/*
+ * @package   MLRTimeline
+ * @version   1.4
+ * @since     1.1
+ * @author    Matthew Lillistone <matthewlillistone.co.uk>
+ * 
+ */
+
+.timeline-container {max-width:900px; height:auto; margin:0 auto; overflow:hidden;}
+
+.timelinediv {display:block; float:left; overflow:hidden; white-space: nowrap;}
+.times {padding-left: 0;}
+ul.times {position:relative; float:left; padding:0 !important; margin:0 0 1.5em !important;}
+ul.times li {float:none; white-space: normal; margin:10px; width:620px; height:auto; list-style:none; display:inline-block; vertical-align: top;}
+.timeline-caption {display:block; margin:0; padding:5px; margin-bottom: 15px; font-family:stars_from_our_eyesregular,sans;}
+#timeline-title {font-family:stars_from_our_eyesregular,sans; font-size:1.2em; padding-left:15px; padding-top: 15px;}
+#timeline-title h2 {font-family:stars_from_our_eyesregular,sans;}
+#times {padding: 0px !important;}
+.date-node {display:inline-block;}
+/*.date-node:first-child {display:block;}*/
+@media screen and (min-width:560px) and (max-width:9999px) {
+.date-node img {max-width: 300px !important; float: left; margin-right: 15px; border-radius:3px;}
+}
+@media screen and (min-width:0px) and (max-width:560px) {	
+.date-node img {max-width: 100%; float: left; margin:0 0 1.2em; border-radius:3px;}
+}
+div#timeline {height: auto; margin: 10px 0 8px; padding: 10px 10px 15px; white-space: nowrap; overflow:hidden;}
+
+.datep {float:left;}
+.datee {float:right;}
+li.post-marker p {clear: both; margin: 0; font-size: 0.6em; cursor: pointer; float: none; background: rgba(0, 0, 0, 0) !important; padding:0; padding-left:2px !important;}
+.marker {cursor: pointer;}
+#time-years {float: left;}
+
+div#timeline div.time-increments ul.time-increment ul.month-time-increment .post-marker {clear: both; margin-right: 5px !important; margin-top: 8px; margin-left:0 !important; border-radius: 3px; padding: 3px; font-size: 1.3em; border:0px solid; display: inline-block;}
+
+.month-time-increment {padding-left: 0; float:none;}
+#timeline ul.time-increment p {display: inline-block; margin-right: 10px; float:none;}
+/* #timeline ul.time-increment ul.month-time-increment > p {margin-left: 2px; display: inline-block; padding: 0 10px; float:none;}
+*/
+div#but-container {margin-bottom:20px; position:relative; clear:both;}
+div#but-container:after, div#bright:after, div#bleft:after, #small-dates:after {
+	content: ".";
+	display:block;
+	clear:both;
+	visibility:hidden;
+	line-height:0;
+	height:0;
+	}
+div#bleft {font-size: 1em; left:15px; top: 0px; position:absolute;}
+div#bright {font-size: 1em; right:15px; top: 0px; position:absolute;}
+#button-left, #button-right {font-size: 1.5em; opacity:0.7;}
+#button-right-end {font-size: 1.5em; margin-left: 10px; opacity:0.7;}
+#button-left-end {font-size: 1.5em; margin-right: 10px; opacity:0.7;}
+#button-left:hover, #button-right:hover, #button-left-end:hover, #button-right-end:hover {opacity:0.95;}
+#button-left {}
+
+.year-increment {float: none;}
+.month-increment {float:left;}
+.day-increment {float:left;}
+.ml-time-increment {float:none; clear: both; margin-left: 30px;}
+
+p.pyear {font-size: 3em; height:auto; padding:10px; margin:20px 0 10px; border-radius:3px; line-height:1.2em;}
+p.pmonth {font-size: 1.5em; height:auto; padding:5px; line-height: 0.6em; border-radius:3px; margin:5px 0;}
+p.pday {font-size: 1.5em; height:auto; margin:5px 0;}
+p.phour {font-size:1.2em; height:auto; margin: 0 !important;}
+
+.time-increments {
+	width: auto;
+	height: auto;
+	float:none;
+	position:relative;
+	margin-bottom:20px;
+	min-height: 124px;
+}
